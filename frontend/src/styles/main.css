@@ -1,0 +1,47 @@
+.navbar {
+  flex-direction: row;
+  justify-content: space-between;
+  height: 10%;
+}
+
+.content-navbar {
+  display: flex;
+  flex-direction: row;
+}
+
+.content {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+.auth-navbar {
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+
+.main-container {
+  display: flex;
+  height: 90%;
+}
+
+.main-image {
+  width: 50%;
+}
+
+.main-image > img {
+  width: 40%;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+}
+
+.main-desc {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

@@ -1,5 +1,9 @@
+@import url('./styles/main.css');
+
 .App {
   text-align: center;
+  width: 100vw;
+  height: 100vh;
 }
 
 .App-logo {
@@ -36,3 +40,4 @@
     transform: rotate(360deg);
   }
 }
+

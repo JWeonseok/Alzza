@@ -1,9 +1,13 @@
 import './app.css';
+import routes from './lib/routes'
+// import {BrowserRouter} from 'react-router-dom'
 
 function App() {
-  return (
-   <h1>hello</h1>
-   )
+  return(
+    <div className="App">
+      {routes}
+    </div>
+  )
 }
 
 export default App;
