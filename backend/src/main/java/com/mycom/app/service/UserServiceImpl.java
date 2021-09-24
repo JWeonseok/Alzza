@@ -45,6 +45,58 @@ public class UserServiceImpl implements UserService{
             e.printStackTrace();
             return FAIL;
         }
-
     }
+
+    @Override
+    @Transactional
+    public UserDto userDetail(String userId) {
+        User user = userRepository.findByUserId(userId);
+        UserDto userDto = null;
+        if(user != null){
+            userDto = new UserDto();
+            userDto.setUserId(user.getUserId());
+            userDto.setPassword(user.getPassword());
+            userDto.setUserName(user.getUserName());
+            userDto.setUserNickName(user.getUserNickName());
+            userDto.setUserTel(user.getUserTel());
+            userDto.setUserEmail(user.getUserEmail());
+        }
+        return userDto;
+    }
+
+    @Override
+    @Transactional
+    public int updateUserInfo(UserDto userDto) {
+        try{
+            User user = new User();
+
+            user.setUserId(userDto.getUserId());
+            user.setPassword(userDto.getPassword());
+            user.setUserName(userDto.getUserName());
+            user.setUserNickName(userDto.getUserNickName());
+            user.setUserTel(userDto.getUserTel());
+            user.setUserEmail(userDto.getUserEmail());
+            // user.setProfileImg("s3 이미지 경로");
+
+            userRepository.save(user);
+            return SUCCESS;
+        }catch (Exception e){
+            e.printStackTrace();
+            return FAIL;
+        }
+    }
+
+    @Override
+    @Transactional
+    public int deleteUser(String userId) {
+        try{
+            userRepository.deleteByUserId(userId);
+            return SUCCESS;
+        }catch (Exception e){
+            e.printStackTrace();
+            return FAIL;
+        }
+    }
+
+
 }

@@ -7,4 +7,7 @@ public interface UserService {
 
     boolean checkUserId(String userId);
     int join(UserDto userDto);
+    UserDto userDetail(String userId);
+    int updateUserInfo(UserDto userDto);
+    int deleteUser(String userId);
 }

@@ -15,10 +15,8 @@ const MainPage = (props) => {
           <button>시작하기</button>
         </div>
       </div>
-      
     </>
   )
-
 };
 
 export default MainPage;
