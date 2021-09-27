@@ -16,8 +16,12 @@ const LoginPage = (props) => {
   }
 
   const setToken = (payload) => {
-    localStorage.setItem('accessToken', payload['jwt-access-token'])
-    localStorage.setItem('refreshToken', payload['jwt-refresh-token'])
+    sessionStorage.setItem('accessToken', payload['jwt-access-token'])
+    sessionStorage.setItem('refreshToken', payload['jwt-refresh-token'])
+  }
+
+  const setUserId = (payload) => {
+    sessionStorage.setItem('userId', payload)
   }
 
   const onSubmit = (e) => {
@@ -34,6 +38,7 @@ const LoginPage = (props) => {
         console.log(res)
         alert(`반갑습니다! ${res.payload.data.userName}님`)
         setToken(res.payload.headers)
+        setUserId(res.payload.data.userId)
         props.history.push('/')
       })
       .catch((err) => {

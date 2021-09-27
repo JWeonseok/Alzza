@@ -3,7 +3,7 @@ import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
 import '../styles/main.css';
 
 function Navi(){
-  const username = localStorage.getItem('accessToken')
+  const username = sessionStorage.getItem('userId')
   return (
     <Navbar bg="light" expand="lg">
     <Container>

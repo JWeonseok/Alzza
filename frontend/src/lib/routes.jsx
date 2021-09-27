@@ -3,7 +3,7 @@ import {Route, Switch} from 'react-router-dom'
 import MainPage from '../views/mainPage/index'
 import LoginPage from '../views/loginPage/index'
 import SignupPage from '../views/signupPage/index'
-// import MyPage from '../views/myPage/index'
+import MyPage from '../views/myPage/index'
 import GamePage from '../views/gamePage/index'
 import GameDetailPage from '../views/gameDetailPage/index'
 import Navi from '../component/navbar'
@@ -24,7 +24,7 @@ const routes = (
       {/* 회원가입 */}
       <Route exact path="/signup" component={SignupPage}/>
       {/* 마이페이지 */}
-      {/* <Route exact path="/mypage/:username" component={MyPage}/> */}
+      <Route exact path="/mypage/:username" component={MyPage}/>
       {/* 게임페이지 */}
       <Route exact path="/game/:category" component={GamePage}/>
       {/* 게임디테일 페이지 */}
