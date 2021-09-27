@@ -112,7 +112,9 @@ const SignupPage = (props) => {
       <form
         className="signupForm"
         onSubmit={onSubmit}
-        style={{ display: 'flex', flexDirection:'column', justifyContent: 'center', alignItems: 'center' }}
+        style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}
+        action="/user"
+        method="POST"
       >
         <div>
           <label>아이디*</label>
