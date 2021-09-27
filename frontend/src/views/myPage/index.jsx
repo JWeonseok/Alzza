@@ -32,7 +32,7 @@ const MyPage = (props) => {
           'userTel': data.userTel,
         })
       })
-  }, [])
+  })
   
   return (
     <>
