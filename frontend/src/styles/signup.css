@@ -1,0 +1,57 @@
+/* 회원가입 */
+
+#signup_line {
+  border-bottom:2px solid #A0A0A0;
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+}
+
+#signup_line #icon {
+  color:#A0A0A0; 
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+#signup_line:focus-within #icon {
+  color:#6562CF; 
+}
+
+#signup_line:focus-within {
+  border-bottom: 2px solid #6562CF;
+}
+
+#signup_line input:focus {
+  outline: none;
+}
+
+#signup_line input {
+  border: none;
+  width: 100%;
+}
+
+#errormessage {
+  margin-bottom: 0px;
+  color: red;
+  font-size: 4px;
+}
+
+#acceptmessage {
+  margin-bottom: 0px;
+  color: rgb(1, 177, 1);
+  font-size: 4px;
+}
+
+.signup_btn {
+  font-size:20px; 
+  padding:5px 8%;
+  background-color: #6562CF;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 30px;
+}

@@ -1,6 +1,6 @@
 package com.mycom.app.controller;
 
-import com.mycom.app.domain.dto.UserDto;
+import com.mycom.app.domain.dto.user.UserDto;
 import com.mycom.app.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

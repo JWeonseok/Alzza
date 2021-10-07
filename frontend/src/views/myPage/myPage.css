@@ -1,0 +1,130 @@
+.mypage-main {
+  width: 60%;
+  height: 70%;
+  margin: auto;
+}
+
+.mypage-main-mobile {
+  width: 90%;
+  height: 70%;
+  margin: auto;
+}
+
+.user-board {
+  height: 40%;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.user-board-mobile {
+  height: 35%;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.profile {
+  width: 30%;
+  border-radius: 15px;
+  background-color: #bfbfff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 70%;
+  overflow: hidden;
+  background-color: ghostwhite;
+}
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.board-info {
+  /* background-color: #bfbfff; */
+  border-radius: 15px;
+  border: 8px solid #bfbfff;
+  width: 95%;
+}
+
+.user-info {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.user-info-mobile {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 3px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.user-info-key {
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: start;
+  padding-left: 26px;
+  padding-bottom: 5px;
+}
+
+.user-info-input {
+  height: 3rem;
+  width: 90%;
+  background-color: lavender;
+  border: 2px solid lavender;
+  border-radius: 1rem;
+}
+
+.user-info-input::placeholder {
+  font-weight: bold;
+  text-align: center;
+  color: black;
+}
+
+.mypagebutton {
+  border: none;
+  outline: 0;
+  background-color: white;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.mypagebutton-mobile {
+  font-size: 13px;
+  border: none;
+  outline: 0;
+  background-color: white;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.mypagebutton:hover  {
+  background-color: white;
+  border:solid #bfbfff;
+  border-radius: 20px;
+  margin-bottom: 0.5px;
+}
+
+.mypagebutton-mobile:hover  {
+  background-color: white;
+  border:solid #bfbfff;
+  border-radius: 20px;
+  margin-bottom: 0.5px;
+}

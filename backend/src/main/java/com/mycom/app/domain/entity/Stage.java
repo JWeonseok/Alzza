@@ -21,12 +21,14 @@ import java.util.Date;
 @DynamicInsert
 @DynamicUpdate
 @Table(name="STAGE")
-public class Stage implements Serializable {
+public class Stage {
     @Id
+    private long StageId;
+
     @Column(length = 20)
     private String userId;
 
-    @Id
+
     private int gameCode;
 
     private int curStage;

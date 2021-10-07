@@ -1,0 +1,80 @@
+
+/* 로그인페이지 */
+.etcBtn {
+  font-size:20px; 
+  padding:5px 43%;
+  background-color: #6562CF;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+#id_line {
+  border-bottom:2px solid #A0A0A0;
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+}
+
+#idIcon {
+  color:#A0A0A0; 
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+#id_line:focus-within #idIcon {
+  color:#6562CF; 
+}
+
+#id_line:focus-within {
+  border-bottom: 2px solid #6562CF;
+}
+
+#id_line input:focus {
+  outline: none;
+}
+
+#id_line input {
+  border: none;
+}
+
+#pw_line {
+  border-bottom:2px solid #A0A0A0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+}
+
+#pwIcon {
+  color:#A0A0A0; 
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+#pw_line:focus-within #pwIcon {
+  color:#6562CF; 
+}
+
+#pw_line:focus-within {
+  border-bottom: 2px solid #6562CF;
+}
+
+#pw_line input {
+  border: none;
+}
+
+#pw_line input:focus {
+  outline: none;
+}
+
+input:focus::-webkit-input-placeholder, 
+textarea:focus::-webkit-input-placeholder { 
+  color:#6562CF; 
+}

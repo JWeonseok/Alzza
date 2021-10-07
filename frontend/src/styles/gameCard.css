@@ -1,42 +1,190 @@
 .gamecard-container {
-  box-shadow: 0 15px 30px 1px grey;
-	background: rgba(255, 255, 255, 0.90);
-	text-align: center;
+	background: white;
 	border-radius: 5px;
 	overflow: hidden;
-	margin: 5em auto;
+	margin: 2em auto;
 	height: 350px;
-	width: 900px;
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+}
+
+.gamecard {
+	display: flex;
+	align-items: center;
+	width: 100%;
 }
 
 .game-details {
 	position: relative;
-	text-align: left;
-	overflow: hidden;
-	padding: 30px;
-	height: 100%;
 	float: left;
-	width: 40%;
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	padding-right: 5%;
 }
 
-.gamecard-container .game-details h1{
-	font-family: 'Bebas Neue', cursive;
-	display: inline-block;
-	position: relative;
-	font-size: 30px;
-	color: #344055;
-	margin: 0;
+.game-details>h1 {
+	font-weight: 900;
+}
+
+.game-details .control .custom {
+	width: 30%;
+  font-size: 20px; 
+  padding: 10px 0;
+  background-color: white;
+	border-width: 1px;
+	border-color: #6762CF;
+  border-radius: 10px;
+  color: #6762CF;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.game-details .control .custom:hover {
+	background-color: #6762CF;
+  color: white;
+}
+
+.game-details .control .custom .text {
+	margin-left: 10px;
 }
 
 .game-image {
-	transition: all 0.3s ease-out;
-	display: inline-block;
 	position: relative;
-	overflow: hidden;
-	height: 100%;
 	float: right;
-	width: 45%;
-	display: inline-block;
+	width: 40%;
+	height: 100%;
+	overflow: hidden;
 }
 
-.gamecard-container img {width: 100%;height: 100%;}
+.game-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.gamecard-container hr {
+	margin-top: 30px;
+}
+
+.gamelist-container>h1 {
+	font-weight: 900;
+	margin-top: 80px;
+	margin-bottom: 90px;
+}
+
+/* 반응형 */
+.responsive {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 60px;
+}
+
+.responsive .card {
+	transform: translate(-50%,-50%);
+}
+
+.card .image {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.card .image img {
+	width: 100%;
+	transition: .5s;
+}
+
+.card:hover .image img {
+	opacity: .5;
+	transform: translateX(30%);/*100%*/
+}
+
+.card .details {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 70%;/*100%*/
+	height: 100%;
+	background: white;
+	transition: .5s;
+	transform-origin: left;
+	transform: perspective(2000px) rotateY(-90deg);
+}
+
+.card:hover .details {
+	transform: perspective(2000px) rotateY(0deg);
+}
+
+.card .details .center {
+	height: 80%;
+	text-align: center;
+	background: #fff;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.card .details .center .detail-title {
+	height: 10%;
+}
+
+.card .details .center .detail-title h1 {
+	font-weight: 700;
+	font-size: 4vw;
+}
+
+.card .details .center .detail-desc {
+	height: 55%;
+}
+
+.card .details .center .detail-desc p {
+	margin: 7% 8% 4% 8%;
+	padding: 0;
+	font-size: 2.6vw;
+}
+
+.card .details .center .detail-btn {
+	height: 15%;
+}
+
+.card .details .detail-btn .custom {
+	width: 80%;
+	background-color: white;
+	border-width: 1px;
+	border-color: #6762CF;
+  border-radius: 10px;
+	color: #6762cf;
+  text-align: center;
+	margin-top: 3%;
+}
+
+.card .details .detail-btn .link .custom .text {
+	margin-left: 3%;
+}
+
+.card .details .detail-btn .link:hover>.custom {
+	background-color: #6762cf;
+	border-width: 1px;
+	color: white;
+}
+
+.gamelist-container-res>h1 {
+	font-weight: 900;
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+

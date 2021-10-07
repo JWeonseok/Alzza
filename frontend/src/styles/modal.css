@@ -1,0 +1,114 @@
+.modalWrapper {
+  box-sizing: border-box;
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  overflow: auto;
+  outline: 0;
+}
+
+.modalOverlay {
+  box-sizing: border-box;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+}
+
+.modalInner {
+  box-sizing: border-box;
+  position: relative;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+  border-radius: 10px;
+  width: 360px;
+  max-width: 480px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.info-update-form {
+  list-style: none;
+  padding: 0;
+}
+
+.info-update-form li {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.info-update-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: start;
+  padding-bottom: 5px;
+}
+
+.info-update-input {
+  height: 3rem;
+  width: 100%;
+  border: 2px solid #6b76ff;
+  border-radius: 1rem;
+  padding-left: 15px;
+}
+
+.info-update-input::placeholder {
+  font-weight: bold;
+  color: lightgray;
+}
+
+input:disabled {
+  background: #e3e6ff;
+}
+
+.form-btn {
+  display: flex;
+  justify-content: right;
+  padding-top: 10px;
+}
+
+.update-btn {
+  background-color: #6b76ff;
+  color: white;
+  padding: 10px 20px;
+  margin: 2px;
+  border: 1px solid #6b76ff;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.cancel-btn {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  margin: 2px;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.delete-btn {
+  background-color: crimson;
+  color: white;
+  padding: 10px 20px;
+  margin: 2px;
+  border: 1px solid crimson;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
